@@ -4,39 +4,36 @@ Production-ready Terraform modules for building secure, scalable, and reusable A
 
 ## Overview
 
-This repository provides reusable, well-documented Terraform modules for provisioning AWS infrastructure. The goal is to demonstrate production-quality Infrastructure as Code (IaC) practices, modular design, and automated validation.
+This repository contains reusable Terraform modules for AWS infrastructure. Each module follows Infrastructure as Code (IaC) best practices and includes documentation, working examples, and automated validation.
 
-The project is intended for learning, portfolio development, and as a reference implementation for Platform Engineering and Site Reliability Engineering (SRE) practices.
+The repository is being developed incrementally as a Platform Engineering portfolio project.
 
-## Goals
+## Current Modules
 
-- Build reusable Terraform modules
-- Follow Infrastructure as Code best practices
-- Maintain high code quality through automation
-- Provide clear documentation and examples
-- Showcase production-grade repository standards
+| Module | Status |
+|---------|:------:|
+| VPC | ✅ |
+| Security Groups | ⏳ |
+| IAM | ⏳ |
+| EC2 | ⏳ |
+| Application Load Balancer | ⏳ |
+| Auto Scaling Group | ⏳ |
+| S3 | ⏳ |
+| CloudWatch | ⏳ |
 
 ## Repository Structure
 
 ```text
 terraform-aws-platform/
 ├── modules/
+│   └── vpc/
 ├── examples/
+│   └── vpc/
 ├── docs/
+│   └── architecture/
 ├── .github/
 └── README.md
 ```
-
-## Planned Modules
-
-- VPC
-- Security Groups
-- IAM
-- EC2
-- Application Load Balancer
-- Auto Scaling Group
-- S3
-- CloudWatch
 
 ## Tooling
 
@@ -45,35 +42,23 @@ terraform-aws-platform/
 - pre-commit
 - terraform-docs
 - tflint
-- Checkov (planned)
-- Terratest (planned)
 
 ## Roadmap
 
-### Phase 1
-- Repository foundation
-- CI setup
-- Development tooling
-
-### Phase 2
-- Core networking modules
-- Security modules
-- Compute modules
-
-### Phase 3
-- Monitoring modules
-- Documentation improvements
-- End-to-end examples
-
-### Phase 4
-- Security scanning
-- Automated testing
-- Release automation
+- ✅ Repository Foundation
+- ✅ VPC Module
+- ⏳ Security Group Module
+- ⏳ IAM Module
+- ⏳ EC2 Module
+- ⏳ Application Load Balancer Module
+- ⏳ Auto Scaling Group Module
+- ⏳ S3 Module
+- ⏳ CloudWatch Module
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting changes.
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-This project is licensed under the MIT License.
+MIT License.
