@@ -7,12 +7,19 @@ This project follows Semantic Versioning.
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-07-29
+
 ### Added
 
-- Repository foundation
-- Initial documentation
-- GitHub Actions workflow
-- Development tooling configuration
+- Reusable AWS VPC Terraform module
+- Public and private subnet support
+- Internet Gateway
+- NAT Gateway
+- Public and private route tables
+- Route table associations
+- Example deployment
+- Module documentation
+- Architecture diagram
 
 ## [0.1.0] - 2026-07-28
 
@@ -24,3 +31,4 @@ This project follows Semantic Versioning.
 - CONTRIBUTING guide
 - CODEOWNERS
 - GitHub Actions for formatting and validation
+- Development tooling configuration

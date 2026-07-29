@@ -11,18 +11,12 @@ permissions:
 
 jobs:
   terraform-validate:
-    name: Validate Terraform Configuration
+    name: Terraform Validate
     runs-on: ubuntu-latest
-
-    strategy:
-      fail-fast: false
-      matrix:
-        directory:
-          - examples
 
     defaults:
       run:
-        working-directory: ${{ matrix.directory }}
+        working-directory: examples/vpc
 
     steps:
       - name: Checkout repository
@@ -31,23 +25,8 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
 
-      - name: Find Terraform configuration
-        id: tf-files
-        run: |
-          if find . -name "*.tf" | grep -q .; then
-            echo "found=true" >> $GITHUB_OUTPUT
-          else
-            echo "found=false" >> $GITHUB_OUTPUT
-          fi
-
       - name: Terraform Init
-        if: steps.tf-files.outputs.found == 'true'
         run: terraform init -backend=false
 
       - name: Terraform Validate
-        if: steps.tf-files.outputs.found == 'true'
         run: terraform validate
-
-      - name: Skip validation
-        if: steps.tf-files.outputs.found == 'false'
-        run: echo "No Terraform configuration found. Skipping validation."
