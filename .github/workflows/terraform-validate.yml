@@ -11,12 +11,19 @@ permissions:
 
 jobs:
   terraform-validate:
-    name: Terraform Validate
+    name: Terraform Validate (${{ matrix.directory }})
     runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        directory:
+          - examples/vpc
+          - examples/security-group
 
     defaults:
       run:
-        working-directory: examples/vpc
+        working-directory: ${{ matrix.directory }}
 
     steps:
       - name: Checkout repository

@@ -1,0 +1,9 @@
+vpc_id = "vpc-0123456789abcdef0"
+
+project     = "terraform-aws-platform"
+environment = "dev"
+
+tags = {
+  ManagedBy = "Terraform"
+  Owner     = "Platform Team"
+}
