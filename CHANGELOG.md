@@ -7,6 +7,20 @@ This project follows Semantic Versioning.
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-07-30
+
+### Added
+
+- Reusable AWS Security Group Terraform module
+- Dynamic ingress rules
+- Dynamic egress rules
+- Security Group references
+- Web Security Group example
+- Application Security Group example
+- Database Security Group example
+- Module documentation
+- Architecture diagram
+
 ## [0.2.0] - 2026-07-29
 
 ### Added
