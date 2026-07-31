@@ -14,7 +14,7 @@ The repository is being developed incrementally as a Platform Engineering portfo
 |---------|:------:|
 | VPC | ✅ |
 | Security Group | ✅ |
-| IAM | ⏳ |
+| IAM | ✅ |
 | EC2 | ⏳ |
 | Application Load Balancer | ⏳ |
 | Auto Scaling Group | ⏳ |
@@ -27,10 +27,12 @@ The repository is being developed incrementally as a Platform Engineering portfo
 terraform-aws-platform/
 ├── modules/
 │   ├── vpc/
-│   └── security-group/
+│   ├── security-group/
+│   └── iam/
 ├── examples/
 │   ├── vpc/
-│   └── security-group/
+│   ├── security-group/
+│   └── iam/
 ├── docs/
 │   └── architecture/
 ├── .github/
@@ -49,8 +51,10 @@ terraform-aws-platform/
 ## Repository Features
 
 - Reusable Terraform modules
-- Dynamic Infrastructure as Code
-- Production-ready examples
+- Production-ready Infrastructure as Code
+- Modular architecture
+- Dynamic resource configuration
+- Example deployments
 - Automated validation
 - Generated module documentation
 - Architecture diagrams
@@ -64,7 +68,7 @@ terraform-aws-platform/
 | Repository Foundation | ✅ |
 | VPC Module | ✅ |
 | Security Group Module | ✅ |
-| IAM Module | ⏳ |
+| IAM Module | ✅ |
 | EC2 Module | ⏳ |
 | Application Load Balancer Module | ⏳ |
 | Auto Scaling Group Module | ⏳ |
@@ -75,8 +79,8 @@ terraform-aws-platform/
 
 ### VPC Module
 
-- Public Subnet
-- Private Subnet
+- Public Subnets
+- Private Subnets
 - Internet Gateway
 - NAT Gateway
 - Route Tables
@@ -90,6 +94,16 @@ terraform-aws-platform/
 - Application Security Group
 - Database Security Group
 
+### IAM Module
+
+- IAM Roles
+- Managed Policy Attachments
+- Optional Custom IAM Policies
+- Optional EC2 Instance Profiles
+- EC2 IAM Role Example
+- S3 Read Role Example
+- CloudWatch Agent Role Example
+
 ## Quality Assurance
 
 Every module includes:
@@ -99,9 +113,21 @@ Every module includes:
 - Architecture diagram
 - terraform-docs documentation
 - Terraform validation
+- Terraform plan verification
 - tflint validation
 - GitHub Actions
 - pre-commit hooks
+
+## Versioning
+
+This repository follows Semantic Versioning.
+
+| Version | Milestone |
+|---------|-----------|
+| v0.1.0 | Repository Foundation |
+| v0.2.0 | VPC Module |
+| v0.3.0 | Security Group Module |
+| v0.4.0 | IAM Module |
 
 ## Contributing
 

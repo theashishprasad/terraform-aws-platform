@@ -20,6 +20,7 @@ jobs:
         directory:
           - examples/vpc
           - examples/security-group
+          - examples/iam
 
     defaults:
       run:
