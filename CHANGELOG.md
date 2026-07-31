@@ -3,9 +3,25 @@
 All notable changes to this project will be documented in this file.
 
 The format is based on Keep a Changelog.
+
 This project follows Semantic Versioning.
 
 ## [Unreleased]
+
+## [0.4.0] - 2026-07-31
+
+### Added
+
+- Reusable AWS IAM Terraform module
+- IAM Role resource
+- Managed Policy attachments
+- Optional Custom IAM Policy
+- Optional EC2 Instance Profile
+- EC2 IAM Role example
+- S3 Read Role example
+- CloudWatch Agent Role example
+- Module documentation
+- Architecture diagram
 
 ## [0.3.0] - 2026-07-30
 

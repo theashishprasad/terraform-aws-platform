@@ -1,0 +1,8 @@
+project = "terraform-aws-platform"
+
+environment = "dev"
+
+tags = {
+  ManagedBy = "Terraform"
+  Owner     = "Platform Team"
+}
