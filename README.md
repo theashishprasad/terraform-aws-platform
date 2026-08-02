@@ -15,8 +15,8 @@ The repository is being developed incrementally as a Platform Engineering portfo
 | VPC | ✅ |
 | Security Group | ✅ |
 | IAM | ✅ |
-| EC2 | ⏳ |
-| Application Load Balancer | ⏳ |
+| EC2 | ✅ |
+| Application Load Balancer | ✅ |
 | Auto Scaling Group | ⏳ |
 | S3 | ⏳ |
 | CloudWatch | ⏳ |
@@ -28,11 +28,15 @@ terraform-aws-platform/
 ├── modules/
 │   ├── vpc/
 │   ├── security-group/
-│   └── iam/
+│   ├── iam/
+│   ├── ec2/
+│   └── alb/
 ├── examples/
 │   ├── vpc/
 │   ├── security-group/
-│   └── iam/
+│   ├── iam/
+│   ├── ec2/
+│   └── alb/
 ├── docs/
 │   └── architecture/
 ├── .github/
@@ -69,8 +73,8 @@ terraform-aws-platform/
 | VPC Module | ✅ |
 | Security Group Module | ✅ |
 | IAM Module | ✅ |
-| EC2 Module | ⏳ |
-| Application Load Balancer Module | ⏳ |
+| EC2 Module | ✅ |
+| Application Load Balancer Module | ✅ |
 | Auto Scaling Group Module | ⏳ |
 | S3 Module | ⏳ |
 | CloudWatch Module | ⏳ |
@@ -104,6 +108,26 @@ terraform-aws-platform/
 - S3 Read Role Example
 - CloudWatch Agent Role Example
 
+### EC2 Module
+
+- EC2 Instance
+- User Data
+- IAM Instance Profile
+- Security Groups
+- Root Volume
+- Additional Volume
+- Optional Elastic IP
+
+### Application Load Balancer Module
+
+- Application Load Balancer
+- Target Groups
+- HTTP Listener
+- HTTPS Listener
+- HTTP → HTTPS Redirect
+- Health Checks
+- Target Group Attachments
+
 ## Quality Assurance
 
 Every module includes:
@@ -128,6 +152,8 @@ This repository follows Semantic Versioning.
 | v0.2.0 | VPC Module |
 | v0.3.0 | Security Group Module |
 | v0.4.0 | IAM Module |
+| v0.5.0 | EC2 Module |
+| v0.6.0 | Application Load Balancer Module |
 
 ## Contributing
 

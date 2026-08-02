@@ -21,6 +21,8 @@ jobs:
           - examples/vpc
           - examples/security-group
           - examples/iam
+          - examples/ec2
+          - examples/alb
 
     defaults:
       run:

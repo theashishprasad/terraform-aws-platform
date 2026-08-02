@@ -8,6 +8,37 @@ This project follows Semantic Versioning.
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-08-02
+
+### Added
+
+- Reusable AWS Application Load Balancer Terraform module
+- Application Load Balancer
+- Target Groups
+- Target Group Attachments
+- HTTP Listener
+- Optional HTTPS Listener
+- Optional HTTP to HTTPS Redirect
+- Configurable Health Checks
+- Example deployment
+- Module documentation
+- Architecture diagram
+
+## [0.5.0] - 2026-08-01
+
+### Added
+
+- Reusable AWS EC2 Terraform module
+- EC2 Instance
+- IAM Instance Profile support
+- User Data support
+- Root Volume configuration
+- Optional Additional EBS Volume
+- Optional Elastic IP
+- Example deployment
+- Module documentation
+- Architecture diagram
+
 ## [0.4.0] - 2026-07-31
 
 ### Added
@@ -60,5 +91,5 @@ This project follows Semantic Versioning.
 - CHANGELOG
 - CONTRIBUTING guide
 - CODEOWNERS
-- GitHub Actions for formatting and validation
+- GitHub Actions
 - Development tooling configuration
