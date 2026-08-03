@@ -1,0 +1,47 @@
+#################################################
+# Launch Template
+#################################################
+
+ami_id = "ami-0123456789abcdef0"
+
+instance_type = "t3.micro"
+
+instance_profile = "ec2-instance-profile"
+
+#################################################
+# Networking
+#################################################
+
+security_group_ids = [
+  "sg-0123456789abcdef0"
+]
+
+private_subnet_ids = [
+  "subnet-0123456789abcdef0",
+  "subnet-abcdef01234567890"
+]
+
+#################################################
+# Load Balancer
+#################################################
+
+target_group_arns = [
+  "arn:aws:elasticloadbalancing:ap-south-1:123456789012:targetgroup/web-tg/xxxxxxxx"
+]
+
+#################################################
+# Project
+#################################################
+
+project = "terraform-aws-platform"
+
+environment = "dev"
+
+#################################################
+# Tags
+#################################################
+
+tags = {
+  ManagedBy = "Terraform"
+  Owner     = "Platform Team"
+}

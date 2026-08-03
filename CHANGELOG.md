@@ -8,6 +8,25 @@ This project follows Semantic Versioning.
 
 ## [Unreleased]
 
+---
+
+## [0.7.0] - 2026-08-03
+
+### Added
+
+- Reusable AWS Auto Scaling Group Terraform module
+- Launch Template
+- Auto Scaling Group
+- Target Tracking Scaling Policy
+- Target Group Attachment
+- Instance Refresh
+- EC2 and ELB Health Check support
+- Example deployment
+- Module documentation
+- Architecture diagram
+
+---
+
 ## [0.6.0] - 2026-08-02
 
 ### Added
@@ -24,6 +43,8 @@ This project follows Semantic Versioning.
 - Module documentation
 - Architecture diagram
 
+---
+
 ## [0.5.0] - 2026-08-01
 
 ### Added
@@ -38,6 +59,8 @@ This project follows Semantic Versioning.
 - Example deployment
 - Module documentation
 - Architecture diagram
+
+---
 
 ## [0.4.0] - 2026-07-31
 
@@ -54,6 +77,8 @@ This project follows Semantic Versioning.
 - Module documentation
 - Architecture diagram
 
+---
+
 ## [0.3.0] - 2026-07-30
 
 ### Added
@@ -68,6 +93,8 @@ This project follows Semantic Versioning.
 - Module documentation
 - Architecture diagram
 
+---
+
 ## [0.2.0] - 2026-07-29
 
 ### Added
@@ -81,6 +108,8 @@ This project follows Semantic Versioning.
 - Example deployment
 - Module documentation
 - Architecture diagram
+
+---
 
 ## [0.1.0] - 2026-07-28
 

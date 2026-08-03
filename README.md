@@ -6,7 +6,9 @@ Production-ready Terraform modules for building secure, scalable, and reusable A
 
 This repository contains reusable Terraform modules for AWS infrastructure. Each module follows Infrastructure as Code (IaC) best practices and includes documentation, working examples, architecture diagrams, and automated validation.
 
-The repository is being developed incrementally as a Platform Engineering portfolio project demonstrating production-quality Infrastructure as Code.
+The repository is being developed incrementally as a Platform Engineering portfolio project demonstrating production-quality Terraform modules.
+
+---
 
 ## Current Modules
 
@@ -17,9 +19,11 @@ The repository is being developed incrementally as a Platform Engineering portfo
 | IAM | ✅ |
 | EC2 | ✅ |
 | Application Load Balancer | ✅ |
-| Auto Scaling Group | ⏳ |
+| Auto Scaling Group | ✅ |
 | S3 | ⏳ |
 | CloudWatch | ⏳ |
+
+---
 
 ## Repository Structure
 
@@ -30,18 +34,23 @@ terraform-aws-platform/
 │   ├── security-group/
 │   ├── iam/
 │   ├── ec2/
-│   └── alb/
+│   ├── alb/
+│   └── asg/
 ├── examples/
 │   ├── vpc/
 │   ├── security-group/
 │   ├── iam/
 │   ├── ec2/
-│   └── alb/
+│   ├── alb/
+│   └── asg/
 ├── docs/
 │   └── architecture/
 ├── .github/
+├── .pre-commit-config.yaml
 └── README.md
 ```
+
+---
 
 ## Tooling
 
@@ -51,6 +60,8 @@ terraform-aws-platform/
 - pre-commit
 - terraform-docs
 - tflint
+
+---
 
 ## Repository Features
 
@@ -65,6 +76,8 @@ terraform-aws-platform/
 - Conventional Commits
 - Semantic Versioning
 
+---
+
 ## Roadmap
 
 | Milestone | Status |
@@ -75,16 +88,17 @@ terraform-aws-platform/
 | IAM Module | ✅ |
 | EC2 Module | ✅ |
 | Application Load Balancer Module | ✅ |
-| Auto Scaling Group Module | ⏳ |
+| Auto Scaling Group Module | ✅ |
 | S3 Module | ⏳ |
 | CloudWatch Module | ⏳ |
+
+---
 
 ## Current Architecture
 
 ### VPC Module
 
-- Public Subnets
-- Private Subnets
+- Public & Private Subnets
 - Internet Gateway
 - NAT Gateway
 - Route Tables
@@ -94,26 +108,20 @@ terraform-aws-platform/
 - Dynamic Ingress Rules
 - Dynamic Egress Rules
 - Security Group References
-- Web Security Group
-- Application Security Group
-- Database Security Group
+- IPv4 / IPv6 Support
 
 ### IAM Module
 
 - IAM Roles
 - Managed Policy Attachments
-- Optional Custom IAM Policies
-- Optional EC2 Instance Profiles
-- EC2 IAM Role Example
-- S3 Read Role Example
-- CloudWatch Agent Role Example
+- Optional Custom Policies
+- Optional Instance Profiles
 
 ### EC2 Module
 
 - EC2 Instance
 - User Data
 - IAM Instance Profile
-- Security Groups
 - Root Volume
 - Additional Volume
 - Optional Elastic IP
@@ -122,11 +130,20 @@ terraform-aws-platform/
 
 - Application Load Balancer
 - Target Groups
-- HTTP Listener
-- HTTPS Listener
-- HTTP → HTTPS Redirect
+- HTTP / HTTPS Listeners
+- HTTP Redirect
 - Health Checks
-- Target Group Attachments
+
+### Auto Scaling Group Module
+
+- Launch Template
+- Auto Scaling Group
+- Target Tracking Scaling Policy
+- Target Group Attachment
+- Instance Refresh
+- Health Checks
+
+---
 
 ## Quality Assurance
 
@@ -136,11 +153,14 @@ Every module includes:
 - Example deployment
 - Architecture diagram
 - terraform-docs documentation
+- Terraform formatting
 - Terraform validation
 - Terraform plan verification
 - tflint validation
 - GitHub Actions
 - pre-commit hooks
+
+---
 
 ## Versioning
 
@@ -154,10 +174,15 @@ This repository follows Semantic Versioning.
 | v0.4.0 | IAM Module |
 | v0.5.0 | EC2 Module |
 | v0.6.0 | Application Load Balancer Module |
+| v0.7.0 | Auto Scaling Group Module |
+
+---
 
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting changes.
+
+---
 
 ## License
 
