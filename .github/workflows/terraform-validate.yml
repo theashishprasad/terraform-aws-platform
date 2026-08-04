@@ -24,6 +24,7 @@ jobs:
           - examples/ec2
           - examples/alb
           - examples/asg
+          - examples/s3
 
     defaults:
       run:

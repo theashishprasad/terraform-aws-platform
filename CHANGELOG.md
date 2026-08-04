@@ -10,6 +10,23 @@ This project follows Semantic Versioning.
 
 ---
 
+## [0.8.0] - 2026-08-04
+
+### Added
+
+- Reusable AWS S3 Terraform module
+- Bucket Versioning
+- Server-side Encryption (AES256 / KMS)
+- Lifecycle Rules
+- Optional Bucket Policy
+- Public Access Block
+- Optional Server Access Logging
+- Example deployment
+- Module documentation
+- Architecture diagram
+
+---
+
 ## [0.7.0] - 2026-08-03
 
 ### Added

@@ -20,7 +20,7 @@ The repository is being developed incrementally as a Platform Engineering portfo
 | EC2 | ✅ |
 | Application Load Balancer | ✅ |
 | Auto Scaling Group | ✅ |
-| S3 | ⏳ |
+| S3 | ✅ |
 | CloudWatch | ⏳ |
 
 ---
@@ -35,14 +35,17 @@ terraform-aws-platform/
 │   ├── iam/
 │   ├── ec2/
 │   ├── alb/
-│   └── asg/
+│   ├── asg/
+│   ├── s3/
+│   └── cloudwatch/ (planned)
 ├── examples/
 │   ├── vpc/
 │   ├── security-group/
 │   ├── iam/
 │   ├── ec2/
 │   ├── alb/
-│   └── asg/
+│   ├── asg/
+│   └── s3/
 ├── docs/
 │   └── architecture/
 ├── .github/
@@ -55,7 +58,7 @@ terraform-aws-platform/
 ## Tooling
 
 - Terraform
-- AWS Provider
+- AWS Provider v6
 - GitHub Actions
 - pre-commit
 - terraform-docs
@@ -68,11 +71,12 @@ terraform-aws-platform/
 - Reusable Terraform modules
 - Production-ready Infrastructure as Code
 - Modular architecture
+- Secure-by-default resources
 - Dynamic resource configuration
 - Example deployments
-- Automated validation
 - Generated module documentation
 - Architecture diagrams
+- Automated validation
 - Conventional Commits
 - Semantic Versioning
 
@@ -89,7 +93,7 @@ terraform-aws-platform/
 | EC2 Module | ✅ |
 | Application Load Balancer Module | ✅ |
 | Auto Scaling Group Module | ✅ |
-| S3 Module | ⏳ |
+| S3 Module | ✅ |
 | CloudWatch Module | ⏳ |
 
 ---
@@ -107,8 +111,8 @@ terraform-aws-platform/
 
 - Dynamic Ingress Rules
 - Dynamic Egress Rules
-- Security Group References
 - IPv4 / IPv6 Support
+- Security Group References
 
 ### IAM Module
 
@@ -143,6 +147,16 @@ terraform-aws-platform/
 - Instance Refresh
 - Health Checks
 
+### S3 Module
+
+- S3 Bucket
+- Bucket Versioning
+- Server-side Encryption
+- Lifecycle Rules
+- Bucket Policy
+- Public Access Block
+- Access Logging
+
 ---
 
 ## Quality Assurance
@@ -175,6 +189,7 @@ This repository follows Semantic Versioning.
 | v0.5.0 | EC2 Module |
 | v0.6.0 | Application Load Balancer Module |
 | v0.7.0 | Auto Scaling Group Module |
+| v0.8.0 | S3 Module |
 
 ---
 
