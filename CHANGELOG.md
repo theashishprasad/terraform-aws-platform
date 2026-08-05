@@ -10,6 +10,23 @@ This project follows Semantic Versioning.
 
 ---
 
+## [0.9.0] - 2026-08-05
+
+### Added
+
+- Reusable AWS CloudWatch Terraform module
+- CloudWatch Log Groups
+- CloudWatch Metric Alarms
+- Optional CloudWatch Dashboards
+- SNS Alarm Notifications
+- Configurable Log Retention
+- Metric Dimensions
+- Example deployment
+- Module documentation
+- Architecture diagram
+
+---
+
 ## [0.8.0] - 2026-08-04
 
 ### Added
