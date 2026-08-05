@@ -21,7 +21,7 @@ The repository is being developed incrementally as a Platform Engineering portfo
 | Application Load Balancer | ✅ |
 | Auto Scaling Group | ✅ |
 | S3 | ✅ |
-| CloudWatch | ⏳ |
+| CloudWatch | ✅ |
 
 ---
 
@@ -37,7 +37,7 @@ terraform-aws-platform/
 │   ├── alb/
 │   ├── asg/
 │   ├── s3/
-│   └── cloudwatch/ (planned)
+│   └── cloudwatch/
 ├── examples/
 │   ├── vpc/
 │   ├── security-group/
@@ -45,7 +45,8 @@ terraform-aws-platform/
 │   ├── ec2/
 │   ├── alb/
 │   ├── asg/
-│   └── s3/
+│   ├── s3/
+│   └── cloudwatch/
 ├── docs/
 │   └── architecture/
 ├── .github/
@@ -94,7 +95,7 @@ terraform-aws-platform/
 | Application Load Balancer Module | ✅ |
 | Auto Scaling Group Module | ✅ |
 | S3 Module | ✅ |
-| CloudWatch Module | ⏳ |
+| CloudWatch Module | ✅ |
 
 ---
 
@@ -157,6 +158,15 @@ terraform-aws-platform/
 - Public Access Block
 - Access Logging
 
+### CloudWatch Module
+
+- CloudWatch Log Groups
+- Metric Alarms
+- CloudWatch Dashboards
+- SNS Notifications
+- Configurable Log Retention
+- Metric Dimensions
+
 ---
 
 ## Quality Assurance
@@ -190,6 +200,7 @@ This repository follows Semantic Versioning.
 | v0.6.0 | Application Load Balancer Module |
 | v0.7.0 | Auto Scaling Group Module |
 | v0.8.0 | S3 Module |
+| v0.9.0 | CloudWatch Module |
 
 ---
 

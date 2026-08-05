@@ -25,6 +25,7 @@ jobs:
           - examples/alb
           - examples/asg
           - examples/s3
+          - examples/cloudwatch
 
     defaults:
       run:
